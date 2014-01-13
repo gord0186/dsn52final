@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html,body{
+	width:100%;
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background-image:linear-gradient(0deg,rgba(205,184,141,1),rgb(255,255,255));
+}
+
+
+@media only screen and (min-width: 68em){
+	html{
+		max-width:1099px;
+		margin:.5rem auto;
+		background:rgba(147,160,101,1.00)
+	}
+	
+}
+/*nav*/
+	
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display:block;
+	position:absolute;
+	top:10px;
+	right:5%;
+	height:40px;
+	width:40px;
+	background:white url(../images/nav-icon.svg) no-repeat center center;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color:#939393;
+}
+
+.nav-top{
+	display:none;
+}
+
+.nav-top[data-state="expanded"]{
+	display:block;
+}
+
+nav{
+	text-align:center;
+}
+
+nav li{
+	font-size:1.25rem;
+	text-transform:capitalize;
+	padding:1rem;
+	border-top: 1px #000000 solid;
+	margin:0 2rem;
+}
+@media only screen and (min-width: 23em){
+	.h1{
+		text-align:center;	
+	}
+	.nav{
+		overflow: auto;
+	}
+	
+	.nav li{
+		display:inline-block;
+		padding:.5rem;
+		margin:.1% auto;
+		border-top:none;
+		border-right:1px solid;
+	}
+	
+	.nav ul{
+	clear:both;
+	margin:1.2rem;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 36em){
+	.h1{
+	display:inline-block;
+	float:left;
+	clear:both;
+	}
+	
+	.nav{
+		overflow: auto;
+	}
+	
+	.nav li{
+		float: left;
+		display:inline-block;
+		padding:.5rem;
+		margin:0;
+		border-top:none;
+		border-right:1px solid;
+	}
+	
+	.nav ul{
+		float:right;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display:block;
+	}
+	
+}
+
+@media only screen and (min-width: 58em){
+	header{
+		float:left;
+		width:15%;
+	}
+	
+	main{
+		float:right;
+		width:85%;
+	}
+	
+	footer{
+		clear:both;
+	}
+	
+	.nav-top{
+		float:left;
+		max-height:60rem;
+	}
+	
+	nav ul{
+		display:block;
+		padding:0rem;
+	}
+	
+	nav li{
+		padding:.5rem;
+		font-size:1.25rem;
+		border-top:1px solid #000000;
+		border-right:none;
+	}
+	
+	.nav-top li{
+		border-top:1px solid #000000;
+		border-right:none;
+		width:100%
+	}
+	
+	.h1{
+		width:40%;
+	}
+}
+	
+/*body*/
+
+/*----home----*/
+
+.h1{
+	width:20%;
+	margin:.5rem;
+	box-shadow:none;
+}
+
+.home-dis{
+	width:90%;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	margin:.5rem auto;
+}
+
+img{
+	width:100%;
+	box-shadow:4px 4px 9px #9F9E9E;
+	border-radius:4px;
+}
+
+
+.flexslider{
+	border:9px solid rgba(206,185,135,1.00);
+	box-shadow:4px 4px 9px #9F9E9E;
+	clear:both;
+}
+
+/*portfolio*/
+
+h2{
+	padding:1rem 0 0 0;
+	font-size:1.5rem;
+	border-bottom:1px solid;
+	width:70%;
+	margin:.5rem auto;	
+	clear:both;
+}
+
+.port-body{
+	padding:.5rem;	
+}
+
+.port{
+	width:90%;
+	margin:.5rem auto;
+	padding: .5rem;
+	box-shadow:inset 2px 5px 10px rgba(0,0,0,1.00);
+	background-color:rgba(237,251,240,1.00);
+}
+
+.port img{
+	margin:.5rem auto;
+	width:80%;
+}
+
+.pop{
+	float:left;
+	background:#CDCBCB;
+	
+}
+.port p{
+	margin:.5rem;
+}
+
+.left img{
+}
+
+.right img{
+}
+
+.hover:hover,
+.hover:focus,
+.hover:active{
+	color:#0F0F0F;
+	opacity:.5;
+}
+
+/*pop down img one*/
+
+.pop-down{
+	display:none;
+}
+
+.pop-down[data-state="expanded"]{
+	display:block;
+}
+
+.port-body{
+}
+
+.pop-btn,
+.pop-btn:link,
+.pop-btn:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+
+/* pop down img two*/
+
+	.pop-down2{
+	display:none;
+}
+	.pop-down2[data-state="expanded"]{
+	display:block;
+}
+.pop-btn2,
+.pop-btn2:link,
+.pop-btn2:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+
+/*pop down botton 3*/
+
+	.pop-down3{
+	display:none;
+}
+	.pop-down3[data-state="expanded"]{
+	display:block;
+}
+.pop-btn3,
+.pop-btn3:link,
+.pop-btn3:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+
+/* pop down botton 4*/
+
+	.pop-down4{
+	display:none;
+}
+	.pop-down4[data-state="expanded"]{
+	display:block;
+}
+.pop-btn4,
+.pop-btn4:link,
+.pop-btn4:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+
+/*pop down btn 5*/
+
+.pop-down5{
+	display:none;
+}
+
+.pop-down5[data-state="expanded"]{
+	display:block;
+}
+.pop-btn5,
+.pop-btn5:link,
+.pop-btn5:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+
+/*pop down btn 6*/
+
+.pop-down6{
+	display:none;
+}
+
+.pop-down6[data-state="expanded"]{
+	display:block;
+}
+.pop-btn6,
+.pop-btn6:link,
+.pop-btn6:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+
+/*pop down btn 7*/
+
+.pop-down7{
+	display:none;
+}
+
+.pop-down7[data-state="expanded"]{
+	display:block;
+}
+.pop-btn7,
+.pop-btn7:link,
+.pop-btn7:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+	
+/*pop down btn 8*/
+
+.pop-down8{
+	display:none;
+}
+
+.pop-down8[data-state="expanded"]{
+	display:block;
+}
+.pop-btn8,
+.pop-btn8:link,
+.pop-btn8:visited{
+	display:block;
+	top:10px;
+	right:5%;
+	width:90%;
+	margin:.5rem auto;
+}
+	      
+.pop-btn{
+
+}
+
+
+@media only screen and (min-width: 52em){
+	
+	.port-body{
+		max-width:1000px;
+		margin:5% auto;
+	}
+	
+	.left{
+		float:left;
+		width:45%;	
+	}
+
+	
+	.right{
+		float:right;
+		width:45%;	
+	}
+	
+	.port{
+	height:50rem;
+	}
+}
+
+
+
+/*bio*/
+
+.bio{
+	margin:5%;
+}
+
+@media only screen and (min-width: 43em){
+	.bio img{
+		width:50%;
+		float:left;
+		margin:.5rem;
+	}
+}
+
+
+/*footer*/
+
+footer p{
+	font-size:.875rem;
+	padding:.5rem 1rem;	
+}
+
+@media only screen and (min-width: 23em){
+	
+	footer p{
+		float:left;
+	}
+}

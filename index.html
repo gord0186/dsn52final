@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+	<link href="css/general.css" rel="stylesheet">
+	
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+</head>
+
+<body>
+	
+	<header>
+		<a href="index.html"><img src="images/logo.svg" class="h1"></a>
+		<a href="#nav" class="nav-btn hide-text"></a>
+		<nav class="nav nav-top" data-state="collapsed">
+			<ul>
+				
+				<li><a href="index.html">home</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">contacts</a></li>
+				<li><a href="bio.html">Bio</a></li>
+					
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+	
+		<div class="home-dis">
+			
+			<!--flexslider start-->
+		
+			<div class="flexslider">
+			  <ul class="slides">
+				<li>
+				  <img src="images/peace1-1.jpg" alt="diagram" />
+				</li>
+				<li>
+				  <img src="images/peace1-3.2.jpg" alt="diagram"/>
+				</li>
+				<li>
+				  <img src="images/peace1-2.jpg" alt="diagram"/>
+				</li>
+			  </ul>
+			</div>
+			
+			<!--flexslider end-->
+			<h2>Discription</h2>
+			<p>Lashley + Associates was commissioned by the Town of Petawawa to develop a concept plan for the redevelopment of Petawawa Point Park with the purpose to restore and enhance the appearance and function of Petawawa’s premiere waterfront park. Using principles outlined in the Town’s Strategic Plan and in the Parks and Recreation Master Plan, the concept plan provides for a sustainable redevelopment of the Park to ensure that it can meet the current and future needs of the community.  We worked closely with both the Town and the community throughout the design process to develop a concept plan that provides flexible programming opportunities that allow the Park to adapt to the current and future environmental conditions of the Park</p>
+			
+		</div>
+	
+	</main>
+<footer>
+	
+	<nav id="nav" class="nav nav-bottom">
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">contacts</a></li>
+			<li><a href="bio.html">Bio</a></li>	
+		</ul>
+	</nav>
+	
+
+	<p>2013© Kenneth Gordon</p>
+	
+</footer>
+
+<script src="js/nav.js"></script>
+
+<!--silder start-->
+		<!--import the jquary-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<!--import the flexslier plugin-->
+		<script src="flexslider/jquery.flexslider-min.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		  $(window).load(function() {
+			$('.flexslider').flexslider({
+				pauseOnHover: true,            
+				animation: "slide", 
+				smoothHeight: true,
+			});
+		  });
+		</script>
+<!--slider end-->
+</body>
+</html>
